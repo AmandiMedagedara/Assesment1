@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-      <div class="searchbar">
+      <div class="searchbar" style="">
           <form @submit.prevent="fetchSearchNews">
-              <input type="text" placeholder="search for latest news" v-model="searchword">
+              <input type="text" placeholder="" v-model="searchword">
           </form>
 
       <div class="search-icons">
-        <i v-if="!isBusy" class="fas fa-search" @click ="fetchSearchNews"></i>
+        <i v-if="!isBusy" class="fas fa-search"></i>
         <i v-else class="fas fa-spinner fa-spin"></i>
         <i class = "fas fa-times" @click="fetchTopNews"></i>
       </div>
@@ -160,7 +160,7 @@ export default {
         position: absolute;
         right: 20px;
         top: 20px;
-        color: #fff;
+        color: rgb(236, 242, 247);
 
         i {
           margin-left: 15px;
@@ -181,7 +181,7 @@ export default {
        height: 320px;
        justify-content: center;
        background: white;
-       border: 1px solid #ddd;
+       border-style: round;
        padding: 20px 20px;
        margin: 10px;
        margin-top: 25px;
