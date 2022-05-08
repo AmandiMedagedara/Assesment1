@@ -1,13 +1,11 @@
 <template>
   <div id="app">
     <News :apiKey="apiKey" />
-    <!-- <SourceSelection :apiKey="apiKey"/> -->
   </div>
 </template>
 
 <script>
 import News from "./components/News.vue";
-import SourceSelection from "./components/SourceSelection.vue";
 
 export default {
   name: 'app',

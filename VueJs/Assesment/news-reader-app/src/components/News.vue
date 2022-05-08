@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <div class="searchbar" style="">
+      <div class="searchbar">
           <form @submit.prevent="fetchSearchNews">
               <input type="text" style='text-align:center;margin-top: 1%;width: 30%; height: 2; margin-left: 35%;' placeholder="Search For Latest News" v-model="searchword">
           </form>
@@ -181,9 +181,10 @@ export default {
        width: 15%;
        height: 250px;
        justify-content: center;
-       background: rgb(3, 14, 40);
-       font-family:Verdana, Geneva, Tahoma, sans-serif;
-       color: aliceblue;
+       background: rgb(241, 241, 241);
+       font-family:monospace;
+       font-weight: bold;
+       color: black;
        padding: 20px 20px;
        margin: 10px;
        margin-top: 25px;
