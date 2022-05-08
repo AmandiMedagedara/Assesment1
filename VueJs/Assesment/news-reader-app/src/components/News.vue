@@ -2,7 +2,7 @@
     <div class="container">
       <div class="searchbar" style="">
           <form @submit.prevent="fetchSearchNews">
-              <input type="text" placeholder="" v-model="searchword">
+              <input type="text" style='text-align:center;margin-top: 1%;width: 30%; height: 2; margin-left: 35%;' placeholder="Search For Latest News" v-model="searchword">
           </form>
 
       <div class="search-icons">
@@ -132,7 +132,7 @@ export default {
 <style lang = "scss" scoped> 
  .container {
     position: relative;
-      background: #eee;
+      background: white;
   
   .searchbar {
       position: absolute;
@@ -142,15 +142,15 @@ export default {
       width: 100%;
       height: 60px;
       font-size: 1.6rem;
+      background-color: white;
     input {
         padding: 0 100px 0 20px;
         margin: 0;
-        width: calc(100% - 120px);
-        height: 60px;
+        font-size: 20px;
+        font-family:serif;
         border: none;
-        font-size: 2rem;
-        color: #fff;
-        background-color: #222;
+        font-weight: bold;
+        color: black;
 
         &:focus {
        outline: none;   
@@ -158,9 +158,10 @@ export default {
       }
       .search-icons {
         position: absolute;
-        right: 20px;
+        right: 12px;
         top: 20px;
-        color: rgb(236, 242, 247);
+        color: black;
+        margin-right: 30%;
 
         i {
           margin-left: 15px;
@@ -177,11 +178,12 @@ export default {
     article {
        display: flex;
        flex-direction: column;
-       width: 280px;
-       height: 320px;
+       width: 15%;
+       height: 250px;
        justify-content: center;
-       background: white;
-       border-style: round;
+       background: rgb(3, 14, 40);
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       color: aliceblue;
        padding: 20px 20px;
        margin: 10px;
        margin-top: 25px;
